@@ -1,0 +1,33 @@
+# Simple Calculator in Python
+
+# Input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Operation choice
+print("Choose operation:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = input("Enter choice (1/2/3/4): ")
+
+# Calculation
+if choice == '1':
+    print("Result =", num1 + num2)
+
+elif choice == '2':
+    print("Result =", num1 - num2)
+
+elif choice == '3':
+    print("Result =", num1 * num2)
+
+elif choice == '4':
+    if num2 != 0:
+        print("Result =", num1 / num2)
+    else:
+        print("Cannot divide by zero")
+
+else:
+    print("Invalid Input")
